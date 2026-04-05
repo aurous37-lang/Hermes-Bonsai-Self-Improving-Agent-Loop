@@ -160,7 +160,7 @@ The loop automatically generates more tasks in weak domains.
 
 ### Why This Works for Small Models
 
-A 1-bit 8B model will never match GPT-5 on raw reasoning. But that's not the target. The target is: **can it become a reliable agent with calibrated self-awareness and tool routing?**
+The target is: **can it become a reliable agent with calibrated self-awareness and tool routing?**
 
 A model that:
 - Reasons compactly in a structured format
@@ -173,7 +173,7 @@ That's achievable through this pipeline.
 
 ### Perception → Context → Intention
 
-Borrowed from martial arts pedagogy: the right cognitive order for an agent is:
+The cognitive order and frame-work for this agent is:
 
 1. **Perceive** — what is actually in front of me? Raw signal, not assumptions.
 2. **Context** — given what I perceive, which of my patterns apply? This is where memory fires.
