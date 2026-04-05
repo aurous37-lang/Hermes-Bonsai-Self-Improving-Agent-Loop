@@ -22,34 +22,34 @@ The pipeline runs on a cron loop — every 15 minutes, 20 tasks are generated, s
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    Karpathy Auto-Research Loop               │
+│                    Karpathy Auto-Research Loop              │
 ├─────────────────────────────────────────────────────────────┤
-│                                                              │
+│                                                             │
 │  ┌──────────┐    raw trace    ┌──────────┐    gold trace    │
 │  │  Bonsai  │ ──────────────> │  Codex   │ ──────────────>  │
-│  │  1-bit   │                 │ GPT-5.4  │                  │
-│  │   8B     │ <── fine-tune ──│  (teacher)│ <── score ──     │
+│  │  1-bit   │                 │  GPT-5.4 │                  │
+│  │   8B     │ <── fine-tune ──│ (teacher)│ <── score ──     │
 │  │(student) │                 └──────────┘                  │
 │  └──────────┘                                               │
-│       │                                                      │
-│       ▼                                                      │
+│       │                                                     │
+│       ▼                                                     │
 │  ┌──────────┐                                               │
 │  │ Training │  ChatML + Structured JSONL                    │
 │  │  Data    │  (dual format, loss-masked)                   │
 │  └──────────┘                                               │
-│       │                                                      │
-│       ▼                                                      │
+│       │                                                     │
+│       ▼                                                     │
 │  ┌──────────┐                                               │
-│  │  LoRA    │  Unsloth/Axolotl, rank 64                    │
-│  │Fine-Tune │  all-linear, LR 1.5e-4                       │
+│  │  LoRA    │  Unsloth/Axolotl, rank 64                     │ 
+│  │Fine-Tune │  all-linear, LR 1.5e-4                        │
 │  └──────────┘                                               │
-│       │                                                      │
-│       ▼                                                      │
+│       │                                                     │
+│       ▼                                                     │
 │  ┌──────────────────┐                                       │
-│  │ TurboQuant Cache  │  V=4bit, K=3bit                     │
-│  │ (inference only)  │  Enables 32K-64K context             │
+│  │ TurboQuant Cache │  V=4bit, K=3bit                       │
+│  │ (inference only) │  Enables 32K-64K context              │
 │  └──────────────────┘                                       │
-│                                                              │
+│                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
