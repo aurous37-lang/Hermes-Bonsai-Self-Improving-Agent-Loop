@@ -1,4 +1,4 @@
-# Karpathy Auto-Research Loop for Local Self-Improving Agents
+# Hermes-Bonsai Karpathy Auto-Research Loop for Local Self-Improving Agents
 
 A self-improving training pipeline where a small local model (Bonsai 1-bit 8B) generates its own fine-tuning data through a teacher/student loop with a stronger model (GPT-5.4-mini via Codex). The local model progressively learns structured reasoning, tool use, and self-correction — with the goal of eventually running the entire loop autonomously.
 
