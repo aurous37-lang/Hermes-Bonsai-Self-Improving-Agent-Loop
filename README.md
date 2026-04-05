@@ -271,7 +271,6 @@ These labels transform "partial" from noise into targeted training signal. Each 
 ```
 .
 ├── README.md                          # This file
-├── CLAUDE.md                          # Project context for AI assistants
 │
 ├── karpathy_loop.py                   # Core 3-stage pipeline
 ├── hermes_iteration.py                # Two-model iteration (Bonsai + Codex)
