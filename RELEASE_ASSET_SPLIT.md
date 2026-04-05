@@ -30,7 +30,6 @@ These files are appropriate for the GitHub repository because they explain the l
 ### Documentation and methodology
 - `README.md`
 - `BONSAI_KARPATHY_HERMES_LOOP_WRITEUP.md`
-- `hermes_bonsai_reasoning_traces_for_claudecode.md`
 - `pre_finetune_analysis.md`
 - `Gemini.txt`
 - `notes/`

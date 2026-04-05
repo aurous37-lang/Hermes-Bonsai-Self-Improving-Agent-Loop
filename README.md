@@ -283,7 +283,6 @@ These labels transform "partial" from noise into targeted training signal. Each 
 │
 ├── task_queue.json                    # Local runtime state (not committed)
 ├── sample_dataset.jsonl               # Curated public sample dataset
-├── hermes_bonsai_reasoning_traces_for_claudecode.md  # Methodology doc
 ├── Gemini.txt                         # Training schema + hyperparameters
 │
 └── karpathy_loop_output/              # Generated locally; ignored in GitHub
