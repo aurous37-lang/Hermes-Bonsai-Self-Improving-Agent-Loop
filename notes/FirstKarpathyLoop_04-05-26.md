@@ -1,4 +1,4 @@
-# Session note — 2026-04-05
+# FirstKarpathyLoop — 04-05-26
 
 Public release split completed.
 
