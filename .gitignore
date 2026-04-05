@@ -1,0 +1,50 @@
+# Source and docs are tracked; generated corpora and artifacts are not.
+
+# Raw corpora / generated datasets
+*.jsonl
+**/*.jsonl
+!sample_dataset.jsonl
+karpathy_loop_output/
+karpathy_loop_metrics/
+raw_traces/
+gold_traces/
+training_batches/
+
+# Logs and machine-specific outputs
+**/*.log
+**/*.bak
+**/*.tmp
+**/*.out
+
+# Model weights / checkpoints / exports
+**/*checkpoint*/
+**/*checkpoint.old*/
+**/*.gguf
+**/*.safetensors
+**/*.bin
+**/*.pt
+**/*.pth
+**/*.ckpt
+
+# Constantly changing task queue / runtime state
+task_queue.json
+bonsai_graduation_state.json
+
+# Python caches and local environments
+__pycache__/
+*.pyc
+.venv/
+venv/
+.train_venv/
+unsloth_compiled_cache/
+cuda-compat/
+cuda13compat/
+
+# Environment secrets and local config
+.env
+.env.*
+
+# Package/build metadata
+*.egg-info/
+dist/
+build/
