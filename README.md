@@ -442,7 +442,17 @@ Top-level folder map for new contributors:
 The stage 2 GGUF checkpoint should live on Hugging Face rather than in the repo. Add the release link here when publishing:
 - Stage 2 GGUF: https://huggingface.co/Aurous37/Hermes-Bonsai-Self-Improving-Agent-Loop
 
+Recommended working config for local inference:
+- `--ctx-size 40960`
+- `--n-gpu-layers 37`
+
 If you publish additional exports, keep them with the model release rather than adding them to GitHub.
+
+License note:
+- This GitHub repo is MIT-licensed for the code and docs.
+- The Hugging Face model release uses Apache-2.0 for the checkpoint card and release packaging.
+- The underlying base model license still applies to inherited Qwen3-8B-Base components.
+
 ## Contributing
 
 This is early-stage research. If you're working on:
