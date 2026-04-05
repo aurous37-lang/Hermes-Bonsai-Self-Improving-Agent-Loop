@@ -440,7 +440,7 @@ Top-level folder map for new contributors:
 ## Hugging Face Artifacts
 
 The stage 2 GGUF checkpoint should live on Hugging Face rather than in the repo. Add the release link here when publishing:
-- Stage 2 GGUF: https://huggingface.co/<your-org>/<bonsai-stage2-gguf-repo>
+- Stage 2 GGUF: https://huggingface.co/Aurous37/Hermes-Bonsai-Self-Improving-Agent-Loop
 
 If you publish additional exports, keep them with the model release rather than adding them to GitHub.
 ## Contributing
